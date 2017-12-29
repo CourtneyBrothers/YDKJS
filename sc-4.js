@@ -51,16 +51,25 @@
 // 	console.log( 2 );
 // };
 
-foo(); // 3
+// foo(); // 3
 
-function foo() {
-	console.log( 1 );
+// function foo() {
+// 	console.log( 1 );
+// }
+
+// var foo = function() {
+// 	console.log( 2 );
+// };
+
+// function foo() {
+// 	console.log( 3 );
+// }
+foo(); // "b"
+
+var a = true;
+if (a) {
+   function foo() { console.log( "a" ); }
 }
-
-var foo = function() {
-	console.log( 2 );
-};
-
-function foo() {
-	console.log( 3 );
+else {
+   function foo() { console.log( "b" ); }
 }
